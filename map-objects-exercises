@@ -1,0 +1,20 @@
+Basic Requirements
+
+The incrementValues function from yesterday can be written much more elegantly using map. Rewrite that function using our new and improved version of map.
+
+For convenience, the prompt is reproduced below:
+
+Write a function called incrementValues that accepts an object as a parameter, and outputs an object with all of its numeric values incremented by one. You'll want to use the updated version of map for this, and you will need to check the type of each value to determine whether or not it should be incremented.
+
+Write a function called uppercaseValues that, given an object as a parameter, returns a new object with all of its string values converted to uppercase. You'll want to make use of .toUpperCase() for this:
+
+"hello".toUpperCase(); // => "HELLO"
+Also, ensure that you only attempt to convert strings to uppercase -- you may want to use typeof for this.
+
+Write a function called countNestedKeys that, given an object where all values are also objects, returns an object that contains the count of keys in each nested object, e.g.
+
+function countNestedKeys(object) {
+  // TODO: Your code here
+}
+countNestedKeys({a: {b: 1, c: 7}, f: {h: 22, g: 12, i: 24}});
+// => {a: 2, b: 3}

@@ -1,0 +1,26 @@
+
+      f(coll[key], key);
+    }
+  }
+}
+
+function filter(array, predicate) {
+  var acc = [];
+  each(array, function(element, i) {
+    if (predicate(element, i)) {
+      acc.push(element);
+    }
+  });
+  return acc;
+}
+Basic Requirements
+
+Use filter to write the following functions:
+
+Write a function called evens that takes an array of numbers as a parameter, and returns an array of only the even numbers in the parameter.
+
+Write a function called multiplesOfThree that takes an array of numbers as a parameter, and returns an array of only the numbers that are multiples of three.
+
+Write a function called positives that takes an array of numbers as a parameter, and returns an array of only the numbers that are positive.
+
+Write a function called evenLength that takes an array of strings and returns an array of only the strings with an even length.

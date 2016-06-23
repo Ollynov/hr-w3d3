@@ -1,0 +1,34 @@
+More Practice
+
+Use filter to write the following functions:
+
+odds: Accepts an array of numbers, and returns the odd ones.
+negatives: Like positives, but with negatives!
+largerThanSix: given an array of numbers, returns those larger than 6.
+Using filter, write a function startsWithChar that accepts two parameters: an array of strings, and a character (e.g. "a"), and returns an array of only the strings that start with that character:
+
+function startsWithChar(strings, character) {
+  // ...
+}
+var words = "the quick brown fox jumps over the lazy dog".split(" ");
+startsWithChar(words, "q"); // => ["quick"]
+startsWithChar(words, "t"); // => ["the", "the"]
+Extend the filter function to pass the index of each element to the predicate; then, complete the following:
+
+Write a function called evenIndexedEvenLengths (yeah, a bit of a mouthful) that accepts an array of strings as a parameter, and returns only the strings that are found at an even index that also have an even length, e.g.:
+
+function evenIndexedEvenLengths(strings) {
+  // TODO: your code here
+}
+evenIndexedEvenLengths(["lion", "monkey", "aardvaark", "cat", "doge"]);
+// => ["lion", "doge"]
+evenIndexedEvenLengths(["red", "green", "purple", "blue", "yellow"]);
+// => ["purple", "yellow"]
+HINT: You'll need to ensure that your version of filter also passes each elements' index (or key in the case of objects) to the predicate.
+
+Write a version of filter that works on arrays and objects; then, use your updated version of filter to filter an object with values of mixed types to an object with only numeric values. You should be able to use your modified version of filter as follows:
+
+filter({a: 1, b: "dog", c: true}, function(value) {
+  return typeof value === "number";
+});
+// => {a: 1}
